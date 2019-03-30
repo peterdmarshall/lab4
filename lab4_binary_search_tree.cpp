@@ -5,6 +5,7 @@ using namespace std;
 
 // PURPOSE: Default/empty constructor
 BinarySearchTree::BinarySearchTree() {
+	root = NULL;
 }
 
 // PURPOSE: Explicit destructor of the class BinarySearchTree
