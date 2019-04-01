@@ -30,6 +30,25 @@ protected:
 	// number of nodes in the tree
 	unsigned int size;
 
+	// Recursive Helper Functions
+    TaskItem* insertTaskItem(TaskItem* item, TaskItem val);
+
+    TaskItem* removeTaskItem(TaskItem* item, TaskItem val);
+
+	TaskItem* search(TaskItem* item, TaskItem val) const;
+
+	TaskItem findMax(TaskItem* item) const;
+
+	TaskItem findMin(TaskItem* item) const;
+
+	int getHeight(TaskItem* item) const;
+
+	// Get max of two integers
+	int maxInt(int a, int b) const {
+	    return ((a > b) ? a : b);
+	}
+
+
 public:
 	// CONSTRUCTOR AND DESTRUCTOR
 

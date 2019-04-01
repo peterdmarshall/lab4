@@ -5,11 +5,12 @@ using namespace std;
 // PURPOSE: Parametric constructor 
 // initializes heap to an array of (n_capacity + 1) elements
 PriorityQueue::PriorityQueue(unsigned int n_capacity) {
-	heap = new TaskItem*[n_capacity + 1];
+	//heap = new TaskItem*[n_capacity + 1];
 }
 
 // PURPOSE: Explicit destructor of the class PriorityQueue
 PriorityQueue::~PriorityQueue() {
+    /*
 	for(int i = 0; i < size; i++) {
 		if(heap[i] != NULL) {
 			heap[i] = NULL;
@@ -17,6 +18,7 @@ PriorityQueue::~PriorityQueue() {
 		}
 	}
 	delete [] heap;
+     */
 }
 
 // PURPOSE: Returns the number of elements in the priority queue
@@ -55,6 +57,7 @@ PriorityQueue::TaskItem PriorityQueue::max() const {
 // priority queue does not change in capacity
 bool PriorityQueue::enqueue( TaskItem val ) {
 	// Check if heap is at capacity or empty
+	/*
 	if(full()) {
 		return false;
 	} else if(empty()) {
@@ -77,6 +80,7 @@ bool PriorityQueue::enqueue( TaskItem val ) {
 		parentIndex = (childIndex - 1) / 2;
     }
     return true;
+    */
 }
 
 // PURPOSE: Removes the top element with the maximum priority
@@ -84,6 +88,7 @@ bool PriorityQueue::enqueue( TaskItem val ) {
 // returns true if successful and false otherwise
 // priority queue does not change in capacity
 bool PriorityQueue::dequeue() {
+	/*
 	if(empty()) {
 		return true;
 	} else if(size == 1) {
@@ -121,4 +126,5 @@ bool PriorityQueue::dequeue() {
 	}
 
 	return false;
+	 */
 }
